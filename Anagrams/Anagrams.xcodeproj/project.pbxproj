@@ -15,6 +15,7 @@
 		D6EBCF1C25A1A52200D2CE2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EBCF1A25A1A52200D2CE2B /* LaunchScreen.storyboard */; };
 		D6EBCF2725A1A52200D2CE2B /* AnagramsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBCF2625A1A52200D2CE2B /* AnagramsTests.swift */; };
 		D6EBCF3225A1A52200D2CE2B /* AnagramsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBCF3125A1A52200D2CE2B /* AnagramsUITests.swift */; };
+		D6EBCF8A25A1C0D100D2CE2B /* Anagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBCF8925A1C0D100D2CE2B /* Anagrams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D6EBCF2D25A1A52200D2CE2B /* AnagramsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnagramsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EBCF3125A1A52200D2CE2B /* AnagramsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramsUITests.swift; sourceTree = "<group>"; };
 		D6EBCF3325A1A52200D2CE2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EBCF8925A1C0D100D2CE2B /* Anagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anagrams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D6EBCF1825A1A52200D2CE2B /* Assets.xcassets */,
 				D6EBCF1A25A1A52200D2CE2B /* LaunchScreen.storyboard */,
 				D6EBCF1D25A1A52200D2CE2B /* Info.plist */,
+				D6EBCF8925A1C0D100D2CE2B /* Anagrams.swift */,
 			);
 			path = Anagrams;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				D6EBCF1425A1A52000D2CE2B /* ViewController.swift in Sources */,
 				D6EBCF1025A1A52000D2CE2B /* AppDelegate.swift in Sources */,
 				D6EBCF1225A1A52000D2CE2B /* SceneDelegate.swift in Sources */,
+				D6EBCF8A25A1C0D100D2CE2B /* Anagrams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

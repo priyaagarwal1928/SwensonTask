@@ -9,25 +9,53 @@ import XCTest
 @testable import Anagrams
 
 class AnagramsTests: XCTestCase {
+    
+    var objAnagram : Anagrams!
+    
+    override func setUp() {
+        
+      super.setUp()
+        
+        objAnagram = Anagrams()
+        
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+        objAnagram = nil
+       
+    }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testWhetherStringsAreNagramOrNot()  {
+        
+        let firstString = "hello"
+        let secondString = "nine thumps"
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        
+        let isAnagram = objAnagram.checkForAnagram(firstStr: firstString, secondStr:secondString)
+                
+   
+        if isAnagram
+        {
+            XCTAssertTrue(isAnagram, "\(firstString) and \(secondString) are Anagram strings")
         }
+        else
+        {
+            XCTAssertFalse(isAnagram, "\(firstString) and \(secondString) are not Anagram strings")
+        }
+        
+       
+
     }
 
 }
