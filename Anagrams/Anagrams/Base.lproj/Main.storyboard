@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Anagram Strings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU1-TK-VS7">
-                                <rect key="frame" x="32" y="76" width="350" height="21"/>
+                                <rect key="frame" x="32" y="88" width="350" height="21.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first string" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tou-To-KPV">
-                                <rect key="frame" x="32" y="137" width="350" height="44"/>
+                                <rect key="frame" x="32" y="283" width="350" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ewE-FE-0dI"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter second string" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tn5-C3-nxZ">
-                                <rect key="frame" x="32" y="201" width="350" height="44"/>
+                                <rect key="frame" x="32" y="347" width="350" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4qh-6H-r7L"/>
                                 </constraints>
@@ -40,8 +40,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aQ-Re-sd4">
-                                <rect key="frame" x="32" y="285" width="350" height="44"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aQ-Re-sd4">
+                                <rect key="frame" x="32" y="431" width="350" height="44"/>
                                 <color key="backgroundColor" red="0.19215686269999999" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="uih-QO-ug6"/>
@@ -49,6 +49,11 @@
                                 <state key="normal" title="Check Result">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnCheckResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppT-IB-xtz"/>
                                 </connections>
@@ -60,15 +65,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pU1-TK-VS7" secondAttribute="trailing" constant="32" id="1Md-ZK-YGH"/>
                             <constraint firstItem="Tou-To-KPV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="6t1-Nr-6mB"/>
                             <constraint firstItem="Tn5-C3-nxZ" firstAttribute="trailing" secondItem="Tou-To-KPV" secondAttribute="trailing" id="7ja-zv-5wc"/>
-                            <constraint firstItem="Tou-To-KPV" firstAttribute="top" secondItem="pU1-TK-VS7" secondAttribute="bottom" constant="40" id="QIw-Gv-p1p"/>
                             <constraint firstItem="pU1-TK-VS7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Wco-5B-QPk"/>
                             <constraint firstItem="Tn5-C3-nxZ" firstAttribute="leading" secondItem="Tou-To-KPV" secondAttribute="leading" id="dXw-ld-mCw"/>
                             <constraint firstItem="4aQ-Re-sd4" firstAttribute="leading" secondItem="Tn5-C3-nxZ" secondAttribute="leading" id="egf-tk-9G4"/>
+                            <constraint firstItem="4aQ-Re-sd4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fr1-Sm-wTv"/>
                             <constraint firstItem="4aQ-Re-sd4" firstAttribute="top" secondItem="Tn5-C3-nxZ" secondAttribute="bottom" constant="40" id="kWz-R0-Co7"/>
                             <constraint firstItem="Tn5-C3-nxZ" firstAttribute="top" secondItem="Tou-To-KPV" secondAttribute="bottom" constant="20" id="sML-od-jcx"/>
                             <constraint firstItem="4aQ-Re-sd4" firstAttribute="trailing" secondItem="Tn5-C3-nxZ" secondAttribute="trailing" id="t8B-jC-FDG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tou-To-KPV" secondAttribute="trailing" constant="32" id="uo0-3z-SLj"/>
-                            <constraint firstItem="pU1-TK-VS7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="zO6-tN-ywp"/>
+                            <constraint firstItem="pU1-TK-VS7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="zO6-tN-ywp"/>
                         </constraints>
                     </view>
                     <connections>

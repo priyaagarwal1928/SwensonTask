@@ -104,11 +104,11 @@
 				D6EBCF0F25A1A52000D2CE2B /* AppDelegate.swift */,
 				D6EBCF1125A1A52000D2CE2B /* SceneDelegate.swift */,
 				D6EBCF1325A1A52000D2CE2B /* ViewController.swift */,
-				D6EBCF1525A1A52000D2CE2B /* Main.storyboard */,
+				D6EBCF8925A1C0D100D2CE2B /* Anagrams.swift */,
 				D6EBCF1825A1A52200D2CE2B /* Assets.xcassets */,
+				D6EBCF1525A1A52000D2CE2B /* Main.storyboard */,
 				D6EBCF1A25A1A52200D2CE2B /* LaunchScreen.storyboard */,
 				D6EBCF1D25A1A52200D2CE2B /* Info.plist */,
-				D6EBCF8925A1C0D100D2CE2B /* Anagrams.swift */,
 			);
 			path = Anagrams;
 			sourceTree = "<group>";

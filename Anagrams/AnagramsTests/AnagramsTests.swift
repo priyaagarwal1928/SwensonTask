@@ -51,7 +51,9 @@ class AnagramsTests: XCTestCase {
         }
         else
         {
-            XCTAssertFalse(isAnagram, "\(firstString) and \(secondString) are not Anagram strings")
+           //XCTAssertFalse(isAnagram, "\(firstString) and \(secondString) are not Anagram strings")
+            
+            XCTFail("\(firstString) and \(secondString) are not Anagram strings")
         }
         
        
